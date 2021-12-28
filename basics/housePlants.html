@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House Plants</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #fdfcfb 0%, #e0e0e0 100%);
+      }
+
+      h1 {
+        text-align: center;
+        font-family: fantasy;
+        font-size: 32px;
+        color: #2c5d63;
+        border: 4px solid #283739;
+        margin: 15px 0 8px 0;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 28px;
+        margin: 15px 0 15px 0;
+        font-weight: 200;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 70%;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #a2c11c;
+        box-shadow: 3px 3px 3px #283739;
+        border-radius: 6px;
+        font-size: 18px;
+        transition: 200ms all ease-in-out;
+      }
+
+      button:hover {
+        cursor: pointer;
+        opacity: 0.85;
+      }
+
+      p {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.2;
+      }
+
+      span {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+      }
+
+      hr {
+        margin: 15px 0 0 0;
+      }
+      .lettering {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: #2c5d63;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>houseplants</h1>
+      <h2 class="lettering">bring the outside inside</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/671/original/houseplants.jpg?1640667839"
+        alt="several potted house plants"
+      />
+      <p class="lettering">
+        houseplants brighten <em>every</em> home. they clean the air and add
+        life to the room. <br />want to learn how to take care of
+        <strong>your very own</strong> plants?<br />
+        <a
+          href="https://opusgrows.com/blogs/journal/108690758-5-apps-that-will-kinda-guarantee-you-won-t-kill-your-houseplants"
+        >
+          download a house plant app from this list
+        </a>
+      </p>
+      <br />
+      <button class="lettering">subscribe to plant care tips</button>
+      <hr />
+      <span class="lettering">this site made by jordan brainard</span>
+    </div>
+
+    <script>
+      function subscribe() {
+        let name = prompt("What is your name?");
+        let wouldSubscribe = prompt(
+          `Hello ${name}! Would you like to subscribe for email tips? yes/no`
+        );
+
+        if (wouldSubscribe == "yes") {
+          prompt("What is your email?");
+          alert("Thank you for subscribing. Look for our email!");
+        } else {
+          alert("Enjoy your plants");
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", subscribe);
+    </script>
+  </body>
+</html>
